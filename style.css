@@ -7,14 +7,73 @@ html{
     font-family: "Raleway";
 }
 
-
+/** HEADER **/
 header{
     display: flex;
     justify-content: space-between;
+}
+
+header img{
+    height: 40px;
+    margin: 20px 20px 20px 40px;
     
 }
 
 nav li{
     display: flex;
-    
+    font-size: 12px;
+    font-weight: bold;
+    margin : 20px 40px 20px 0;
+    color: #666666;
+}
+
+nav ul:hover{
+    color: #0065FC;
+}
+
+
+/** SEARCH **/
+
+#search{
+    width: 50%;
+    margin: 0 0 0 30px;
+}
+
+#search h1{
+    font-size: 18px;
+}
+
+#search p{
+    font-size: 12px;
+}
+
+form{
+    display: inline-flex;
+}
+
+.searchIcon{
+    background-color: #F2F2F2;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+}
+
+form input{
+    font-weight: bold;
+    padding: 0 30px 0 20px;
+    border-left: none;
+    border-right: none;
+    border-bottom: #F2F2F2 1px solid;
+    border-top: #F2F2F2 1px solid;
+}
+ 
+
+form button{
+    background-color: #0065FC;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    padding: 15px;
 }
