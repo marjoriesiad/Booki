@@ -21,13 +21,16 @@ header img{
 
 nav li{
     display: flex;
-    font-size: 12px;
-    font-weight: bold;
     margin : 20px 40px 20px 0;
-    color: #666666;
 }
 
-nav ul:hover{
+nav ul a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+nav ul a:hover{
     color: #0065FC;
 }
 
@@ -76,4 +79,14 @@ form button{
     border: none;
     border-radius: 0 10px 10px 0;
     padding: 15px;
+}
+
+#results{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
 }
