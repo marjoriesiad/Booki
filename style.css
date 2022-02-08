@@ -19,18 +19,18 @@ header img{
     
 }
 
-nav li{
+nav ul{
     display: flex;
     margin : 20px 40px 20px 0;
 }
 
-nav ul a {
+nav li a {
     color: gray;
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
 }
-nav ul a:hover{
+nav li a:hover{
     color: #0065FC;
 }
 
