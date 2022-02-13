@@ -148,3 +148,74 @@ form{
     padding-left: 55px;
     padding-right: 18px;
 }
+
+.infos{
+    display: flex;
+    align-items: center;
+    padding: 30px 0 20px 0;
+    gap: 10px;
+}
+
+.infos i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #0065FC;
+    border: #F2F2F2 solid 2px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+
+/** SEARCH RESULTS **/
+
+.search-results{
+    display: flex;
+    padding-bottom: 20px;
+    margin: 0 50px;
+    gap: 35px;
+}
+
+#accomodations{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    position: relative;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-top: 50px;
+}
+
+#accomodations h2{
+    padding: 0 0 35px 40px;
+}
+
+.accomodations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0 15px;
+    gap: 35px;
+}
+
+.cards{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 6px;
+    width: 30%;
+    min-width: 250px;
+}
+
+.cards img{
+    height: 160px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
