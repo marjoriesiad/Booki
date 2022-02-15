@@ -1,5 +1,3 @@
-@import url(mobile.css);
-
 @font-face {
     font-family: "Raleway";
     src: url(fonts/Raleway-VariableFont_wght.ttf);
@@ -110,6 +108,10 @@ form{
     padding: 0 15px;
 }
 
+ button .btn-mobile{
+    display: none;
+}
+
 
 /** FILTERS **/
 
@@ -183,6 +185,7 @@ form{
 }
 
 
+
 /** SEARCH RESULTS **/
 
 .search-results{
@@ -222,6 +225,7 @@ form{
     padding: 6px;
     width: 30%;
     min-width: 250px;
+    box-shadow: 3px 3px 9px 3px #ccc;
 }
 
 .cards img{
@@ -292,6 +296,7 @@ aside{
     width: 90%;
     margin-bottom: 35px;
     max-height: 210px;
+    box-shadow: 3px 3px 9px 3px #ccc;
 }
 
 .popular-card img{
@@ -436,4 +441,151 @@ footer{
 .title{
     font-weight: bolder;
     margin-bottom: 20px;
+}
+
+
+/** MOBILE **/
+
+
+@media screen and (max-width: 768px){
+
+    header{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav{
+        margin: 30px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        text-align: center;  
+    }
+
+    li{
+        width: 100%;
+        padding-bottom: 15px;
+        border-bottom: #F2F2F2 solid 3px;
+    }
+    
+
+    li:hover{
+        padding-bottom: 15px;
+        border-bottom: #0065FC solid 3px;
+    }
+
+    .navLink:hover{
+        border-top: none;
+    }
+
+    .searchBar form{
+        display: flex;
+        justify-content: center;
+        margin: 25px auto;
+    }
+
+    button .btn-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+
+    button .btn-desktop{
+        display: none;
+    }
+
+    .filters{
+        justify-content: flex-start;
+        gap: 15px;
+        margin: 0 15px;
+    }
+
+    .filters-btn{
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .search-results{
+        margin: 0;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    #accomodations{
+        background-color: #fff;
+    }
+
+    #accomodation h2{
+        padding: 0 0 35px 20px;
+    }
+
+    .accomodations{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cards{
+        box-shadow: 3px 3px 9px 3px #ccc;
+        width: 90%;
+    }
+
+    .room-info{
+        padding: 5px 15px;
+    }
+
+
+    .activities{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .act-col{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    .oneblock img, .twoblock img, #first-img, #second-img{
+        height: 145px;
+        width: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 40px 30px;
+    }
+
+    .col:first-child{
+        padding-left: 10px;
+    }
+
+    .col{
+        margin: 0;
+        padding: 10px;
+    }
+
+    
+ 
+
 }
