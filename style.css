@@ -34,6 +34,7 @@ header{
 
 .logo img{
     height: 60px;
+    margin-left: 20px;
 }
 
 ul{
@@ -202,11 +203,11 @@ form{
     position: relative;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 #accomodations h2{
-    padding: 0 0 35px 40px;
+    margin-left: 30px;
 }
 
 .accomodations{
@@ -214,7 +215,7 @@ form{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    padding: 0 15px;
+    padding: 0 50px;
     gap: 35px;
 }
 
@@ -242,6 +243,10 @@ form{
     justify-content: start;
     padding: 0 20px;
     height: auto;
+
+}
+
+.room-text h3{
     margin-top: 5px;
 }
 
@@ -257,7 +262,8 @@ form{
 .more{
     font-size: 20px;
     font-weight: bold;
-    margin: 70px 0 30px 40px;
+    margin: 50px 0 0 50px;
+    
 }
 
 
@@ -293,7 +299,7 @@ aside{
     border-radius: 20px;
     padding: 6px;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     margin-bottom: 35px;
     max-height: 210px;
     box-shadow: 3px 3px 9px 3px #ccc;
@@ -319,12 +325,8 @@ aside{
     font-size: 16px;
 }
 
-.first-line{
-    margin-bottom: 0;
-}
-
-.second-line{
-    margin-top: 0;
+.popular-text h3{
+    margin-top: 5px;
 }
 
 .popular-room-stars{
@@ -336,6 +338,7 @@ aside{
 
 
 /** ACTIVITIES **/
+
 
 #activity{
     margin: 0 50px;
@@ -449,6 +452,7 @@ footer{
 
 @media screen and (max-width: 768px){
 
+
     header{
         margin: 0;
         padding: 0;
@@ -497,6 +501,13 @@ footer{
         margin: 25px auto;
     }
 
+    .searchBar button{
+        border-radius: 15px;
+        font-size: 18px;
+        width: 50px;
+        margin-left: -10px;
+    }
+
     button .btn-mobile{
         display: flex;
         justify-content: center;
@@ -531,10 +542,11 @@ footer{
 
     #accomodations{
         background-color: #fff;
+        padding-top: 0;
     }
 
-    #accomodation h2{
-        padding: 0 0 35px 20px;
+    #accomodations h2{
+        margin-left: 70px;
     }
 
     .accomodations{
@@ -542,13 +554,35 @@ footer{
         gap: 15px;
     }
 
+    aside{
+        border-radius: 0;
+    }
+
+    .popular-card{
+        margin-bottom: 15px;
+        width: 85%;
+    }
+
     .cards{
         box-shadow: 3px 3px 9px 3px #ccc;
-        width: 90%;
+        width: 100%;
     }
 
     .room-info{
         padding: 5px 15px;
+    }
+
+    .room-text h3{
+        margin-bottom: 0;
+    }
+
+    .room-text p{
+        margin: 10px 0 10px 0;
+    }
+
+    .more{
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 
 
@@ -557,6 +591,22 @@ footer{
         justify-content: center;
         align-items: center;
         gap: 25px;
+    }
+
+    #activity h2{
+        margin-bottom: 30px;
+    }
+
+    #mobile-fort{
+        margin-bottom: 13px;
+    }
+
+    #mobile-garde{
+        margin-bottom: 13px;
+    }
+
+    .card-title{
+        padding-left: 20px;
     }
 
     .act-col{
@@ -571,9 +621,11 @@ footer{
         width: 100%;
     }
 
+    
+
     footer{
         flex-direction: column;
-        padding: 40px 30px;
+        padding-left: 50px;
     }
 
     .col:first-child{
@@ -584,8 +636,55 @@ footer{
         margin: 0;
         padding: 10px;
     }
+}
 
-    
- 
+
+/** TABLETTE **/
+
+@media screen and (max-width: 992px){
+
+.cards{
+    width: 100%;
+}
+
+.popular h2{
+    font-size: 16px;
+}
+
+.popular i{
+    font-size: 16px;
+}
+
+.popular-text{
+    font-size: 14px;
+}
+
+.popular-text h3{
+    font-size: 14px;
+}
+
+.popular-room-stars{
+    font-size: 12px;
+    padding-top: 0;
+}
+
+.more{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card-title{
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+
+#first-img, #second-img, #third-img, #fourth-img{
+    height: 210px;
+}
+
+
+
+
 
 }
