@@ -1,13 +1,23 @@
 /** police de toute la page **/
-html{font-family: "Raleway", sans-serif; font-size: 16px;}
 
-/** liens non-soulignés, couleur élément parent, forme du curseur **/ 
-a{text-decoration: none; color: inherit; cursor: pointer;}
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+
+
+/** liens non-soulignés, couleur élément parent, forme du curseur **/
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
 
 
 /** HEADER **/
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,12 +25,12 @@ header{
     margin: 0 50px;
 }
 
-.logo img{
+.logo img {
     height: 60px;
     margin-left: 20px;
 }
 
-ul{
+ul {
     margin: 0;
     list-style-type: none;
     display: flex;
@@ -28,43 +38,44 @@ ul{
     text-align: center;
 }
 
-.navLink{
+.navLink {
     padding: 55px;
 }
 
-.navLink:hover{
-    color : #0065FC;
+.navLink:hover {
+    color: #0065FC;
     border-top: #0065FC solid 3px;
     padding-top: 50px;
 }
 
+
 /** SEARCH SECTION **/
 
-.search{
+.search {
     margin: 0 50px;
 }
 
-.searchBar h1{
+.searchBar h1 {
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 5px;
     margin-top: 20px;
 }
 
-.searchBar p{
+.searchBar p {
     display: flex;
     font-weight: 400;
     padding-top: 0;
     margin: 0;
 }
 
-form{
+form {
     display: flex;
     margin-top: 15px;
     height: 50px;
 }
 
-.searchBar span{
+.searchBar span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,14 +86,15 @@ form{
     min-width: 50px;
 }
 
-.searchBar input{
+.searchBar input {
     font-size: 16px;
     font-weight: bold;
     padding-left: 10px;
     border: #F2F2F2 solid 2px;
 }
 
-.searchBar button, .searchBar .btn-desktop{
+.searchBar button,
+.searchBar .btn-desktop {
     border-radius: 0px 20px 20px 0px;
     background-color: #0065FC;
     color: white;
@@ -92,30 +104,29 @@ form{
     padding: 0 15px;
 }
 
- button .btn-mobile{
+button .btn-mobile {
     display: none;
 }
 
 
 /** FILTERS **/
 
-.filters{
+.filters {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 30px;
     gap: 25px;
     padding-top: 10px;
-
 }
 
-.filters-btn{
+.filters-btn {
     display: flex;
     justify-content: space-around;
     gap: 25px;
 }
 
-.flt{
+.flt {
     display: flex;
     align-items: center;
     position: relative;
@@ -126,12 +137,12 @@ form{
     cursor: pointer;
 }
 
-.flt:hover{
+.flt:hover {
     background-color: #0065FC;
     color: white;
 }
 
-.flt i{
+.flt i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,19 +155,19 @@ form{
     font-size: 20px;
 }
 
-.flt p{
+.flt p {
     padding-left: 55px;
     padding-right: 18px;
 }
 
-.infos{
+.infos {
     display: flex;
     align-items: center;
     padding: 30px 0 20px 0;
     gap: 10px;
 }
 
-.infos i{
+.infos i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,17 +180,16 @@ form{
 }
 
 
-
 /** SEARCH RESULTS **/
 
-.search-results{
+.search-results {
     display: flex;
     padding-bottom: 20px;
     margin: 0 50px;
     gap: 35px;
 }
 
-#accomodations{
+#accomodations {
     display: flex;
     flex-direction: column;
     flex: 2;
@@ -189,11 +199,11 @@ form{
     padding-top: 20px;
 }
 
-#accomodations h2{
+#accomodations h2 {
     margin-left: 30px;
 }
 
-.accomodations{
+.accomodations {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -202,8 +212,7 @@ form{
     gap: 35px;
 }
 
-
-.cards{
+.cards {
     background-color: #fff;
     border-radius: 20px;
     padding: 6px;
@@ -212,7 +221,7 @@ form{
     box-shadow: 3px 3px 9px 3px #ccc;
 }
 
-.cards img{
+.cards img {
     height: 160px;
     width: 100%;
     border-radius: 15px 15px 0 0;
@@ -220,39 +229,37 @@ form{
     object-position: center;
 }
 
-.room-info{
+.room-info {
     display: flex;
     flex-direction: column;
     justify-content: start;
     padding: 0 20px;
     height: auto;
-
 }
 
-.room-text h3{
+.room-text h3 {
     margin-top: 5px;
 }
 
-.room-stars{
-    color:#0065FC;
+.room-stars {
+    color: #0065FC;
     margin-bottom: 5px;
 }
 
-.grey{
+.grey {
     color: #d9d9d9;
 }
 
-.more{
+.more {
     font-size: 20px;
     font-weight: bold;
     margin: 50px 0 0 50px;
-    
 }
 
 
 /** ASIDE **/
 
-aside{
+aside {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -261,22 +268,22 @@ aside{
     padding-bottom: 25px;
 }
 
-.popular{
+.popular {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.popular i{
+.popular i {
     margin-right: 35px;
     font-size: 24px;
 }
 
-.popular h2{
+.popular h2 {
     margin: 50px 30px;
 }
 
-.popular-card{
+.popular-card {
     display: flex;
     background-color: #fff;
     border-radius: 20px;
@@ -288,7 +295,7 @@ aside{
     box-shadow: 3px 3px 9px 3px #ccc;
 }
 
-.popular-card img{
+.popular-card img {
     height: 185px;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
@@ -296,62 +303,59 @@ aside{
     object-position: center;
 }
 
-.popular-infos{
+.popular-infos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 2;
 }
 
-.popular-text{
+.popular-text {
     padding: 10px 0 0 20px;
     font-size: 16px;
 }
 
-.popular-text h3{
+.popular-text h3 {
     margin-top: 5px;
 }
 
-.popular-room-stars{
+.popular-room-stars {
     bottom: -20px;
     padding: 20px;
     color: #0065FC;
-
 }
 
 
 /** ACTIVITIES **/
 
-
-#activity{
+#activity {
     margin: 0 50px;
     margin-top: 40px;
     margin-bottom: 10px;
 }
 
-#activity h2{ 
+#activity h2 {
     margin: 0;
 }
 
-
-.activities{
+.activities {
     display: flex;
     margin-top: 20px;
     gap: 35px;
 }
 
-.oneblock{
+.oneblock {
     display: flex;
     flex-direction: column;
     width: 24%;
 }
 
-.activity-card{
+.activity-card {
     border-radius: 20px;
     box-shadow: 3px 3px 9px 3px #ccc;
 }
 
-.oneblock img{
+.oneblock img {
     height: 500px;
     border-radius: 20px 20px 0 0;
     width: 100%;
@@ -359,19 +363,18 @@ aside{
     object-position: center;
 }
 
-.card-title{
+.card-title {
     display: flex;
     align-items: center;
     height: 60px;
     padding-left: 60px;
 }
 
-.card-title h3{
+.card-title h3 {
     margin: 0;
 }
 
-
-.twoblock{
+.twoblock {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -379,7 +382,7 @@ aside{
     width: 24%;
 }
 
-.twoblock img{
+.twoblock img {
     width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -387,18 +390,18 @@ aside{
     object-position: center;
 }
 
-#first-img{
+#first-img {
     height: 250px;
 }
 
-#second-img{
+#second-img {
     height: 130px;
 }
 
 
 /** FOOTER **/
 
-footer{
+footer {
     display: flex;
     justify-content: flex-start;
     background-color: #F2F2F2;
@@ -407,24 +410,24 @@ footer{
     margin-top: 50px;
 }
 
-.col:first-child{
+.col:first-child {
     padding-left: 50px;
 }
 
-.col{
+.col {
     display: flex;
     flex-direction: column;
     padding: 50px 0;
     margin-right: 250px;
 }
 
-.col a{
+.col a {
     text-decoration: none;
     color: inherit;
     margin-bottom: 10px;
 }
 
-.title{
+.title {
     font-weight: bolder;
     margin-bottom: 20px;
 }
@@ -432,190 +435,152 @@ footer{
 
 /** MOBILE **/
 
-
-@media screen and (max-width: 768px){
-
-
-    header{
+@media screen and (max-width: 768px) {
+    header {
         margin: 0;
         padding: 0;
         flex-direction: column;
     }
-
     .logo {
         padding: 20px;
         justify-content: center;
         text-align: center;
     }
-
-    .nav{
+    .nav {
         margin: 30px 0;
         padding: 0;
         width: 100%;
     }
-
-    ul{
+    ul {
         display: flex;
         justify-content: space-around;
         padding: 0;
         margin: 0;
-        text-align: center;  
+        text-align: center;
     }
-
-    li{
+    li {
         width: 100%;
         padding-bottom: 15px;
         border-bottom: #F2F2F2 solid 3px;
     }
-    
-
-    li:hover{
+    li:hover {
         padding-bottom: 15px;
         border-bottom: #0065FC solid 3px;
     }
-
-    .navLink:hover{
+    .navLink:hover {
         border-top: none;
     }
-
-    .searchBar form{
+    .searchBar form {
         display: flex;
         justify-content: center;
         margin: 25px auto;
     }
-
-    .searchBar button{
+    .searchBar button {
         border-radius: 15px;
         font-size: 18px;
         width: 50px;
         margin-left: -10px;
     }
-
-    button .btn-mobile{
+    button .btn-mobile {
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50px;
         cursor: pointer;
     }
-
-
-    button .btn-desktop{
+    button .btn-desktop {
         display: none;
     }
-
-    .filters{
+    .filters {
         justify-content: flex-start;
         gap: 15px;
         margin: 0 15px;
     }
-
-    .filters-btn{
+    .filters-btn {
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: start;
         gap: 10px;
     }
-
-    .search-results{
+    .search-results {
         margin: 0;
         flex-direction: column-reverse;
         padding: 0;
     }
-
-    #accomodations{
+    #accomodations {
         background-color: #fff;
         padding-top: 0;
     }
-
-    #accomodations h2{
+    #accomodations h2 {
         margin-left: 70px;
     }
-
-    .accomodations{
+    .accomodations {
         flex-direction: column;
         gap: 15px;
     }
-
-    aside{
+    aside {
         border-radius: 0;
     }
-
-    .popular-card{
+    .popular-card {
         margin-bottom: 15px;
         width: 85%;
     }
-
-    .cards{
+    .cards {
         box-shadow: 3px 3px 9px 3px #ccc;
         width: 100%;
     }
-
-    .room-info{
+    .room-info {
         padding: 5px 15px;
     }
-
-    .room-text h3{
+    .room-text h3 {
         margin-bottom: 0;
     }
-
-    .room-text p{
+    .room-text p {
         margin: 10px 0 10px 0;
     }
-
-    .more{
+    .more {
         margin-top: 40px;
         margin-bottom: 20px;
     }
-
-
-    .activities{
+    .activities {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 25px;
     }
-
-    #activity h2{
+    #activity h2 {
         margin-bottom: 30px;
     }
-
-    #mobile-fort{
+    #mobile-fort {
         margin-bottom: 13px;
     }
-
-    #mobile-garde{
+    #mobile-garde {
         margin-bottom: 13px;
     }
-
-    .card-title{
+    .card-title {
         padding-left: 20px;
     }
-
-    .act-col{
+    .act-col {
         width: 100%;
         margin: 0;
         padding: 0;
         height: auto;
     }
-
-    .oneblock img, .twoblock img, #first-img, #second-img{
+    .oneblock img,
+    .twoblock img,
+    #first-img,
+    #second-img {
         height: 145px;
         width: 100%;
     }
-
-    
-
-    footer{
+    footer {
         flex-direction: column;
         padding-left: 30px;
     }
-
-    .col:first-child{
+    .col:first-child {
         padding-left: 10px;
     }
-
-    .col{
+    .col {
         margin: 0;
         padding: 10px;
     }
@@ -624,50 +589,49 @@ footer{
 
 /** TABLETTE **/
 
-@media screen and (max-width: 992px){
-
-.cards{
-    width: 100%;
-}
-
-.popular h2{
-    font-size: 16px;
-}
-
-.popular i{
-    font-size: 16px;
-}
-
-.popular-text{
-    font-size: 14px;
-}
-
-.popular-text h3{
-    font-size: 14px;
-}
-
-.popular-room-stars{
-    font-size: 12px;
-    padding-top: 0;
-}
-
-.more{
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.card-title{
-    padding-left: 20px;
-    font-size: 14px;
-}
-
-
-#first-img, #second-img, #third-img, #fourth-img{
-    height: 210px;
-}
-
-
-
-
-
+@media screen and (max-width: 992px) {
+    .cards {
+        width: 100%;
+    }
+    .popular h2 {
+        font-size: 16px;
+    }
+    .popular i {
+        font-size: 16px;
+    }
+    .popular-text {
+        font-size: 14px;
+    }
+    .popular-text h3 {
+        font-size: 14px;
+    }
+    .search-results {
+        gap: 25px;
+    }
+    .popular-card {
+        flex-direction: column;
+        max-height: fit-content;
+    }
+    .popular-room-stars {
+        padding: 10px 0 10px 20px;
+    }
+    .popular-card img {
+        width: auto;
+        height: 160px;
+        border-radius: 15px 15px 0 0;
+    }
+    .more {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .card-title {
+        padding-left: 20px;
+        font-size: 14px;
+    }
+    #first-img,
+    #second-img,
+    #third-img,
+    #fourth-img {
+        height: 210px;
+    }
 }
