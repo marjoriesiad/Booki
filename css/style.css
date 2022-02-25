@@ -31,11 +31,10 @@ header {
 }
 
 ul {
+    display: flex;
     margin: 0;
     list-style-type: none;
-    display: flex;
     font-weight: 500;
-    text-align: center;
 }
 
 .navLink {
@@ -63,7 +62,6 @@ ul {
 }
 
 .searchBar p {
-    display: flex;
     font-weight: 400;
     padding-top: 0;
     margin: 0;
@@ -77,17 +75,19 @@ form {
 
 .searchBar span {
     display: flex;
+    /** center verticalement **/
     align-items: center;
+    /** center horizontalement **/
     justify-content: center;
     font-size: 18px;
     background-color: #F2F2F2;
     color: black;
     border-radius: 20px 0 0 20px;
+    /** empêcher d'être inférieur à 50px **/
     min-width: 50px;
 }
 
 .searchBar input {
-    font-size: 16px;
     font-weight: bold;
     padding-left: 10px;
     border: #F2F2F2 solid 2px;
@@ -104,6 +104,9 @@ form {
     padding: 0 15px;
 }
 
+
+/** cacher l'icône loupe sur desktop **/
+
 button .btn-mobile {
     display: none;
 }
@@ -116,13 +119,13 @@ button .btn-mobile {
     flex-wrap: wrap;
     align-items: center;
     margin-top: 30px;
+    /** écart entre lignes et colonnes **/
     gap: 25px;
     padding-top: 10px;
 }
 
 .filters-btn {
     display: flex;
-    justify-content: space-around;
     gap: 25px;
 }
 
@@ -200,7 +203,7 @@ button .btn-mobile {
 }
 
 #accomodations h2 {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .accomodations {
@@ -230,9 +233,6 @@ button .btn-mobile {
 }
 
 .room-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
     padding: 0 20px;
     height: auto;
 }
@@ -320,7 +320,6 @@ aside {
 }
 
 .popular-room-stars {
-    bottom: -20px;
     padding: 20px;
     color: #0065FC;
 }
@@ -346,7 +345,6 @@ aside {
 
 .oneblock {
     display: flex;
-    flex-direction: column;
     width: 24%;
 }
 
@@ -378,7 +376,6 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
     width: 24%;
 }
 
@@ -403,7 +400,6 @@ aside {
 
 footer {
     display: flex;
-    justify-content: flex-start;
     background-color: #F2F2F2;
     width: 100%;
     height: auto;
@@ -422,7 +418,6 @@ footer {
 }
 
 .col a {
-    text-decoration: none;
     color: inherit;
     margin-bottom: 10px;
 }
