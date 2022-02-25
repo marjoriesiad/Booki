@@ -1,21 +1,8 @@
+/** police de toute la page **/
+html{font-family: "Raleway", sans-serif; font-size: 16px;}
 
-body{
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-}
-
-
-html{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-}
+/** liens non-soulignés, couleur élément parent, forme du curseur **/ 
+a{text-decoration: none; color: inherit; cursor: pointer;}
 
 
 /** HEADER **/
