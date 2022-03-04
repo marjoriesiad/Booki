@@ -4,6 +4,8 @@ body {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -202,7 +204,7 @@ button .btn-mobile {
 #accomodations {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     position: relative;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -226,8 +228,7 @@ button .btn-mobile {
     background-color: #fff;
     border-radius: 20px;
     padding: 6px;
-    width: 30%;
-    min-width: 250px;
+    width: 25%;
     box-shadow: 3px 3px 9px 3px #ccc;
 }
 
@@ -302,7 +303,6 @@ aside {
     margin: 0 auto;
     width: 80%;
     margin-bottom: 35px;
-    max-height: 210px;
     box-shadow: 3px 3px 9px 3px #ccc;
 }
 
@@ -311,7 +311,7 @@ aside {
 }
 
 .popular-card img {
-    height: 185px;
+    height: auto;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
     width: 40%;
@@ -419,7 +419,6 @@ aside {
 footer {
     display: flex;
     background-color: #F2F2F2;
-    width: 100%;
     height: auto;
     margin-top: 50px;
 }
@@ -613,8 +612,26 @@ footer {
     .cards {
         width: 100%;
     }
+    .search-results {
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
+        flex-direction: column;
+    }
+    #accomodations {
+        width: 100%;
+    }
+    .cards {
+        width: 90%;
+    }
+    .cards img {
+        height: 240px;
+    }
+    aside {
+        width: 100%;
+    }
     .popular h2 {
-        font-size: 16px;
+        margin-left: 50px;
     }
     .popular i {
         font-size: 16px;
@@ -680,5 +697,17 @@ footer {
     #fourth-img {
         height: 145px;
         width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .col:first-child {
+        padding-left: 10px;
+    }
+    .col {
+        margin: 0;
+        padding: 10px;
+        width: auto;
     }
 }
