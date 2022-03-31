@@ -19,3 +19,5 @@ Le brief complet ce trouve [ici](https://course.oc-static.com/projects/Front-End
 * Aucun framework CSS ne doit être utilisé.
 * La maquette doit être compatible avec les dernières versions de Chrome et Firefox.
 * Le code doit être valide aux validateurs W3C HTML et CSS.
+
+### Projet validé le 01/03/2022
